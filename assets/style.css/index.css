@@ -1,0 +1,89 @@
+
+/* tech stack */
+
+:root {
+	--black: #000;
+	--white: #fff;
+	--blue: #2C8DBA;
+	--cyan-blue: #008895;
+}
+
+.tech-stack {
+	background-color: var(--white);
+	color: var(--black);
+	border: var(--black) 3px solid; 
+	margin-top: 14vh;
+	text-align: center;
+	opacity: 0.8;
+}
+
+.tech-header {
+	padding: 10px;
+	font-size: 30px;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+.tech-frontend-header,
+.tech-backend-header,
+.tech-database-header,
+.tech-version-header,
+.tech-development-header,
+.tech-learning-header,
+.tech-future-header {
+	text-transform: capitalize;
+	text-decoration: underline;
+}
+
+.tech-language-item {
+	padding: 11px;
+	display: inline-block;
+}
+
+@media (prefers-color-scheme: dark) {
+	.tech-stack {
+		background-color: var(--black);
+		color: var(--cyan-blue);
+		border: var(--cyan-blue) 3px solid;
+	}
+}
+
+@media screen and (min-width: 320px) {
+	.tech-stack { margin-top: 6vh; padding: 2px; }
+	.tech-header { font-size: 22px; }
+	.tech-frontend-header, .tech-backend-header,
+	.tech-database-header, .tech-version-header,
+	.tech-development-header, .tech-learning-header,
+	.tech-future-header { font-size: 22px; }
+	.tech-language-item { padding: 4px; }
+	img { width: 35px; }
+}
+
+@media screen and (min-width: 480px) {
+	.tech-stack { margin-top: 5vh; padding: 4px; }
+	.tech-header { font-size: 25px; }
+	.tech-frontend-header, .tech-backend-header,
+	.tech-database-header, .tech-version-header,
+	.tech-development-header, .tech-learning-header,
+	.tech-future-header { font-size: 25px; padding: 4px; }
+	.tech-language-item { padding: 5px; }
+	img { width: 45px; }
+}
+
+@media screen and (min-width: 768px) {
+	.tech-stack { margin-top: 8vh; padding: 8px; }
+	.tech-header { font-size: 28px; }
+	.tech-frontend-header, .tech-backend-header,
+	.tech-database-header, .tech-version-header,
+	.tech-development-header, .tech-learning-header,
+	.tech-future-header { font-size: 28px; padding: 4px; }
+	.tech-language-item { padding: 5px; }
+	img { width: 50px; }
+}
+
+@media screen and (min-width: 992px) {
+	.tech-stack { margin-top: 8vh; padding: 10px; }
+	.tech-header { font-size: 30px; }
+	.tech-language-item { padding: 5px; }
+	img { width: 60px; }
+}
