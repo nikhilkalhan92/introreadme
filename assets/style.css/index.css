@@ -1,13 +1,67 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
 
-/* tech stack */
+h1 {
+    font-size: 2rem;
+    color: #222;
+    margin-top: 20px;
+}
 
+h2 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    width: 80%;
+    margin: 10px auto;
+}
+
+/* Section Styling */
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* About Me Section */
+#about a {
+    text-decoration: none;
+    color: #0077B5;
+    font-weight: bold;
+}
+
+#about a:hover {
+    text-decoration: underline;
+}
+
+/* Tech Stack Section */
 :root {
 	--black: #000;
 	--white: #fff;
 	--blue: #2C8DBA;
 	--cyan-blue: #008895;
 }
-
 .tech-stack {
 	background-color: var(--white);
 	color: var(--black);
@@ -48,42 +102,221 @@
 	}
 }
 
-@media screen and (min-width: 320px) {
-	.tech-stack { margin-top: 6vh; padding: 2px; }
-	.tech-header { font-size: 22px; }
-	.tech-frontend-header, .tech-backend-header,
-	.tech-database-header, .tech-version-header,
-	.tech-development-header, .tech-learning-header,
-	.tech-future-header { font-size: 22px; }
-	.tech-language-item { padding: 4px; }
-	img { width: 35px; }
+@media screen and (min-width: 320px){
+	.tech-stack {
+		margin-top: 6vh;
+		padding: 2px;
+	}
+
+	.tech-header {
+		font-size: 22px;
+	}
+
+	.tech-frontend-header,
+	.tech-backend-header,
+	.tech-database-header,
+	.tech-version-header,
+	.tech-development-header,
+	.tech-learning-header,
+	.tech-future-header {
+		font-size: 22px;
+	}
+
+	.tech-language-item {
+		padding: 4px;
+	}
+
+	img {
+		width: 35px;
+	}
 }
 
-@media screen and (min-width: 480px) {
-	.tech-stack { margin-top: 5vh; padding: 4px; }
-	.tech-header { font-size: 25px; }
-	.tech-frontend-header, .tech-backend-header,
-	.tech-database-header, .tech-version-header,
-	.tech-development-header, .tech-learning-header,
-	.tech-future-header { font-size: 25px; padding: 4px; }
-	.tech-language-item { padding: 5px; }
-	img { width: 45px; }
+@media screen and (min-width: 480px){
+	.tech-stack {
+		margin-top: 5vh;
+		padding: 4px;
+	}
+
+	.tech-header {
+		font-size: 25px;
+	}
+
+	.tech-frontend-header,
+	.tech-backend-header,
+	.tech-database-header,
+	.tech-version-header,
+	.tech-development-header,
+	.tech-learning-header,
+	.tech-future-header {
+		font-size: 25px;
+		padding: 4px;
+	}
+
+	.tech-language-item {
+		padding: 5px;
+	}
+
+	img {
+		width: 45px;
+	}
 }
 
-@media screen and (min-width: 768px) {
-	.tech-stack { margin-top: 8vh; padding: 8px; }
-	.tech-header { font-size: 28px; }
-	.tech-frontend-header, .tech-backend-header,
-	.tech-database-header, .tech-version-header,
-	.tech-development-header, .tech-learning-header,
-	.tech-future-header { font-size: 28px; padding: 4px; }
-	.tech-language-item { padding: 5px; }
-	img { width: 50px; }
+@media screen and (min-width: 576px){
+	.tech-stack {
+		margin-top: 6vh;
+		padding: 6px;
+	}
+
+	.tech-header {
+		font-size: 26px;
+	}
+
+	.tech-frontend-header,
+	.tech-backend-header,
+	.tech-database-header,
+	.tech-version-header,
+	.tech-development-header,
+	.tech-learning-header,
+	.tech-future-header {
+		font-size: 26px;
+		padding: 4px;
+	}
+
+	.tech-language-item {
+		padding: 5px;
+	}
+
+	img {
+		width: 48px;
+	}
 }
 
-@media screen and (min-width: 992px) {
-	.tech-stack { margin-top: 8vh; padding: 10px; }
-	.tech-header { font-size: 30px; }
-	.tech-language-item { padding: 5px; }
-	img { width: 60px; }
+@media screen and (min-width: 768px){
+	.tech-stack {
+		margin-top: 8vh;
+		padding: 8px;
+	}
+
+	.tech-header {
+		font-size: 28px;
+	}
+
+	.tech-frontend-header,
+	.tech-backend-header,
+	.tech-database-header,
+	.tech-version-header,
+	.tech-development-header,
+	.tech-learning-header,
+	.tech-future-header {
+		font-size: 28px;
+		padding: 4px;
+	}
+
+	.tech-language-item {
+		padding: 5px;
+	}
+
+	img {
+		width: 50px;
+	}
+}
+
+@media screen and (min-width: 992px){
+	.tech-stack {
+		margin-top: 8vh;
+		padding: 10px;
+	}
+
+	.tech-header {
+		font-size: 30px;
+	}
+
+	.tech-frontend-header,
+	.tech-backend-header,
+	.tech-database-header,
+	.tech-version-header,
+	.tech-development-header,
+	.tech-learning-header,
+	.tech-future-header {
+		font-size: 30px;
+		padding: 4px;
+	}
+
+	.tech-language-item {
+		padding: 5px;
+	}
+
+	img {
+		width: 60px;
+	}
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .tech-stack {
+        width: 90%;
+    }
+
+    .tech-icons {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .tech-icons img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* GitHub Statistics Section */
+#github-stats {
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+}
+
+#github-stats img {
+    width: 90%;
+    max-width: 500px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+/* GitHub Trophies Styling */
+#github-stats a img {
+    width: 90%;
+    max-width: 700px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#github-stats a img:hover {
+    transform: scale(1.05);
+}
+
+/* GitHub Profile Counter Styling */
+#github-stats img[alt="Profile Views Counter"] {
+    width: 180px;
+    height: auto;
+    margin-top: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#github-stats img[alt="Profile Views Counter"]:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #github-stats img {
+        width: 100%;
+    }
+
+    #github-stats a img {
+        width: 100%;
+    }
 }
